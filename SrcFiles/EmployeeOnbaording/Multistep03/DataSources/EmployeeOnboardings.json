@@ -1,0 +1,134 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "crff7_employeeonboardings",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "crff7_employeeonboarding",
+    "MaxGetRowsCount": 500,
+    "Name": "EmployeeOnboardings",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "crff7_citystate": "City-State",
+      "crff7_dob": "DOB",
+      "crff7_email": "Email",
+      "crff7_emergencycontactnumber": "Emergency Contact Number",
+      "crff7_employeeonboarding_AsyncOperations": "System Jobs",
+      "crff7_employeeonboarding_BulkDeleteFailures": "Bulk Delete Failures",
+      "crff7_employeeonboarding_DuplicateBaseRecord": "Duplicate Records (crff7_employeeonboarding_DuplicateBaseRecord)",
+      "crff7_employeeonboarding_DuplicateMatchingRecord": "Duplicate Records (crff7_employeeonboarding_DuplicateMatchingRecord)",
+      "crff7_employeeonboarding_FileAttachments": "FileAttachments",
+      "crff7_employeeonboarding_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "crff7_employeeonboarding_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "crff7_employeeonboarding_ProcessSession": "Process Sessions",
+      "crff7_employeeonboarding_SyncErrors": "Sync Errors",
+      "crff7_employeeonboardingid": "EmployeeOnboarding",
+      "crff7_jobtitle": "Job Title",
+      "crff7_name": "Name",
+      "crff7_onboarddate": "Onboard Date",
+      "crff7_phone": "Phone",
+      "crff7_postalcode": "Postal Code",
+      "crff7_previousexperience": "Previous Experience",
+      "crff7_reportstomanager": "Reports To Manager",
+      "crff7_resume": "Resume",
+      "crff7_salary": "Salary",
+      "crff7_streetaddress": "Street Address",
+      "crff7_technology": "Technology",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "EmployeeOnboardings",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "EmployeeOnboardings (Views)",
+    "Name": "_crff7_employeeonboarding_views",
+    "RelatedEntityName": "EmployeeOnboardings",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1a0463bd-4119-43bb-9409-232f39862832": "EmployeeOnboarding Associated View",
+      "30fc52ee-4d0e-4241-8120-1d3b7c2d8715": "Inactive EmployeeOnboardings",
+      "3a880790-7e79-41de-b728-fe52997e07cb": "EmployeeOnboarding Advanced Find View",
+      "6a81f0c3-1905-4951-8868-93a80ff110e4": "EmployeeOnboarding Lookup View",
+      "8168338c-bf6e-4119-b90d-ecea8de025ad": "Active EmployeeOnboardings"
+    }
+  },
+  {
+    "DisplayName": "Status (EmployeeOnboardings)",
+    "Name": "crff7_employeeonboarding_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "EmployeeOnboardings"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "EmployeeOnboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (EmployeeOnboardings)",
+    "Name": "crff7_employeeonboarding_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "EmployeeOnboardings"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "EmployeeOnboardings",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Technology",
+    "Name": "crff7_technology",
+    "OptionSetInfoNameMapping": {
+      "282040000": "SharePoint",
+      "282040001": "JAVA",
+      "282040002": "DotNet",
+      "282040003": "Power Platform"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "crff7_technology",
+        "OptionSetReferenceEntityName": "EmployeeOnboardings"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "crff7_technology",
+    "RelatedEntityName": "EmployeeOnboardings",
+    "Type": "OptionSetInfo"
+  }
+]
